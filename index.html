@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function () {
+                $("img").hover(function () {
+                    $(this).attr({
+                        src: $(this).attr("data-alt-src")
+                        , "data-alt-src": $(this).attr("src")
+                    })
+                })
+            })
+        </script>        
+    </head>
+    <body>
+        <img src="redpanda1.jpg" data-alt-src="redpanda2.jpg" alt="red panda1">
+        <img src="redpanda1.jpg" data-alt-src="redpanda2.jpg" alt="red panda1">
+        <img src="redpanda1.jpg" data-alt-src="redpanda2.jpg" alt="red panda1">
+        <img src="redpanda1.jpg" data-alt-src="redpanda2.jpg" alt="red panda1">
+    </body>
+</html>
